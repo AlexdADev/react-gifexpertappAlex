@@ -1,0 +1,115 @@
+* {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 40px;
+    background-color: #f3f3f3;
+    /* Fondo claro típico de Pinterest */
+    color: #333;
+    /* Color de texto principal */
+}
+
+input {
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: #333;
+}
+
+input:focus {
+    outline: none;
+    border-color: #e60023;
+    /* Rojo característico de Pinterest */
+    box-shadow: 0 0 4px rgba(230, 0, 35, 0.5);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #fff;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.card h5 {
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+    /* Fondo claro para los títulos */
+    font-size: 1rem;
+    color: #e60023;
+    /* Rojo Pinterest */
+    font-weight: bold;
+}
+
+button {
+    background-color: #e60023;
+    /* Botón rojo Pinterest */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c0001c;
+    /* Rojo más oscuro al pasar el mouse */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #fff;
+    color: #888;
+    font-size: 0.9rem;
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+}
+
+h2 {
+    color: #960f23;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+  
+    font-size: 2rem;
+    font-weight: bold;
+    color: linear-gradient(145deg, #f5f5f5, #ddd);
+    
+    text-align: center;
+    padding: 10px 20px;
+
+    margin: 20px auto;
+    max-width: 600px;
+}
